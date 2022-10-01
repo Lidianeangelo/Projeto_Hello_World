@@ -18,8 +18,13 @@ public class HelloWorldController {
 	public class bsm {
 
 		@GetMapping
-		public String bsm_lista() {
-			return "\n BSM-GM - Mentalidade de Crescimento.\n BSM-FO - Orientação ao Futuro.\n BSM-C - Comunicação.";
+		public String[] BSM_lista(){
+			String[] StringArray= {
+					"\n BSM-GM - Mentalidade de Crescimento.",
+					"\n BSM-FO - Orientação ao Futuro.",
+					"\n BSM-C - Comunicação."
+			};
+			return StringArray;
 		}
 	
 
